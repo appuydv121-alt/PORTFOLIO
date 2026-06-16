@@ -21,7 +21,7 @@ const locoScroll = new LocomotiveScroll({
 Shery.mouseFollower()
 Shery.makeMagnet(".magnet")
 Shery.hoverWithMediaCircle(".hvr",{
-    images:["./bucket.avif"]
+    images:["./dogimage.avif" , "./cookies.avif" ,"./bucket.avif"]
 })
 locoScroll.on("scroll", ScrollTrigger.update);
 ScrollTrigger.scrollerProxy("#main", {
@@ -73,7 +73,7 @@ Shery.imageEffect("#hero-rgt", {
                 start: "bottom bottom",
                 scrub: 1,
                 onUpdate: function (prog) {
-                    setScroll(2*prog.progress + index);
+                    setScroll(1.8*prog.progress + index);
                 },
                 scroller: "#main",
             });
