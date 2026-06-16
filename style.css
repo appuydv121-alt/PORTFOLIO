@@ -48,7 +48,7 @@ a:hover{
 
 #hero-lft{
     width:45%;
-    padding: 8vw 2vw;
+    
     overflow: hidden;
     height: 85vh;
    
@@ -93,5 +93,6 @@ a:hover{
     font-size: clamp(20px, 1vw , 1000px);
 }
 .hero-lft-content{
-    height: 80vh;
+    height: 85vh;
+    padding: 15vw 2vw;
 }

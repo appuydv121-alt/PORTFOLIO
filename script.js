@@ -14,7 +14,7 @@
 //         theme = false;
 //     }
 // }
-const scroll = new LocomotiveScroll({
+const locoScroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true
 });
@@ -48,9 +48,9 @@ ScrollTrigger.scrollerProxy("#main", {
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 gsap.registerPlugin(ScrollTrigger);
-gsap.to("#hero-lft" , {
+gsap.to(".hero-lft-content" , {
     scrollTrigger:{
-        trigger: "#hero",
+        trigger: "#profile",
         pin:true,
         start:"top top",
         end:"bottom bottom",
@@ -58,7 +58,25 @@ gsap.to("#hero-lft" , {
           scrub:1,
           scroller: "#main",
     },
-    y:"-300%",
+    y:"-200%",
     ease:Power1
   
-})
+});
+let sections = document.querySelectorAll(".hero-lft-content");
+ 
+Shery.imageEffect("#hero-rgt", {
+    style: 4,
+    slideStyle: (setScroll) => {
+        sections.forEach((section, index) => {
+            ScrollTrigger.create({
+                trigger: section,
+                start: "bottom bottom",
+                scrub: 1,
+                onUpdate: function (prog) {
+                    setScroll(2*prog.progress + index);
+                },
+                scroller: "#main",
+            });
+        });
+    }
+});
