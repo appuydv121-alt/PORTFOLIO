@@ -80,7 +80,7 @@ a:hover{
 }
 #about{
     width: 100%;
-    background-color: aqua;
+   
 }
 #nav h2{
     font-size: clamp(10px , 2vw , 100px);
@@ -100,18 +100,25 @@ a:hover{
     justify-content: space-between;
     height: 100vh;
     padding: 7vw 8vw;
+    background-color: #222;
 }
 #about-lft{
     border: 2px solid black;
     height: 100%;
     width: 30%;
     overflow: hidden;
-}
-#about-rgt{
     border: 2px solid grey;
+    border-radius: 2vw;
+     box-shadow: 1px 1px 1px white;
+}
+
+#about-rgt{
+   background-color: #333;
     height: 100%;
     width: 65%;
     padding: 1vw 2vw;
+    border: 2px solid black;
+    border-radius: 2vw;
 }
 #about-lft img{
     height: 100%;
@@ -121,5 +128,27 @@ a:hover{
 #about-btns{
     display: flex;
     justify-content: space-around;
-    margin-top: 5vh;
+    margin-top: 7vh;
+}
+#aboutSkills{
+    padding: 3vw 0vw;
+}
+#aboutSkills p{
+    margin-bottom: 2vw;
+}
+#about-rgt h1{
+    margin-bottom: 2vw;
+    font-size: 2.5vw;
+}
+#about-rgt p{
+    font-size: clamp(10px , 1vw , 30px);
+}
+#about-btns a{
+    font-size: clamp(10px , 1.4vw , 30px);
+}
+#aboutSkills h3{
+    font-size: clamp(10px , 1.5vw, 30px);
+}
+.name{
+    color: rgb(253, 81, 81);
 }
