@@ -80,3 +80,29 @@ Shery.imageEffect("#hero-rgt", {
         });
     }
 });
+
+// now i will write the code for the about section
+function showSkills(){
+    let skilldiv = document.querySelector("#aboutSkills");
+    let expdiv = document.querySelector("#aboutExperience");
+    let educationdiv = document.querySelector("#aboutEducation");
+    expdiv.style.display = "none";
+    educationdiv.style.display="none";
+    skilldiv.style.display = "block";
+}
+function showExperience(){
+    let skilldiv = document.querySelector("#aboutSkills");
+    let expdiv = document.querySelector("#aboutExperience");
+    let educationdiv = document.querySelector("#aboutEducation");
+    expdiv.style.display = "block";
+    educationdiv.style.display="none";
+    skilldiv.style.display = "none";
+}
+function showEducation(){
+    let skilldiv = document.querySelector("#aboutSkills");
+    let expdiv = document.querySelector("#aboutExperience");
+    let educationdiv = document.querySelector("#aboutEducation");
+    expdiv.style.display = "none";
+    educationdiv.style.display="block";
+    skilldiv.style.display = "none";
+}

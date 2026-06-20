@@ -93,7 +93,7 @@ a:hover{
 }
 .hero-lft-content{
     height: 85vh;
-    padding: 15vw 2vw;
+    padding: 10vw 2vw;
 }
 #about{
     display: flex;
@@ -119,6 +119,7 @@ a:hover{
     padding: 1vw 2vw;
     border: 2px solid black;
     border-radius: 2vw;
+    overflow: hidden;
 }
 #about-lft img{
     height: 100%;
@@ -132,6 +133,8 @@ a:hover{
 }
 #aboutSkills{
     padding: 3vw 0vw;
+
+    display: none;
 }
 #aboutSkills p{
     margin-bottom: 2vw;
@@ -148,7 +151,24 @@ a:hover{
 }
 #aboutSkills h3{
     font-size: clamp(10px , 1.5vw, 30px);
+    color: rgb(231, 81, 81);
 }
 .name{
     color: rgb(253, 81, 81);
+}
+#aboutEducation{
+    display: none;
+     padding: 3vw 0vw;
+  
+}
+#aboutEducation p{
+    margin-bottom: 2vw;
+}
+#aboutEducation h3{
+    font-size: clamp(10px , 1.5vw, 30px);
+      color: rgb(231, 81, 81);
+}
+#aboutExperience{
+    display: none;
+    padding: 4vw 0;
 }
