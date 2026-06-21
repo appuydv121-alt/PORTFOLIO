@@ -172,3 +172,21 @@ a:hover{
     display: none;
     padding: 4vw 0;
 }
+#work{
+    padding: 3vw 4vw;
+}
+#work-block{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 4vw;
+    width: 100%;
+    background-color: #444;
+}
+.work-cnt{
+    width: 30%;
+    background-color: #111;
+    padding: 2vw 4vw;
+}
+.work-a{
+    margin-top: 3vw;
+}
